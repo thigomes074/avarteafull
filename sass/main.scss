@@ -7,13 +7,6 @@
 @import 'fontawesome-all.min.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i');
 
-/*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-// Breakpoints.
 
 	@include breakpoints((
 		xlarge:   ( 1281px,  1680px ),
@@ -24,7 +17,6 @@
 		xxsmall:  ( null,    360px  )
 	));
 
-// Mixins.
 
 	@mixin color($p) {
 		@include color-typography($p);
@@ -42,7 +34,6 @@
 		@include color-index($p);
 	}
 
-// Phone.
 
 	@mixin phone($image-width) {
 		@include vendor('flex-grow', '0');
@@ -154,13 +145,13 @@
 		}
 	}
 
-// Base.
+
 
 	@import 'base/reset';
 	@import 'base/page';
 	@import 'base/typography';
 
-// Component.
+
 
 	@import 'components/row';
 	@import 'components/box';
@@ -180,6 +171,5 @@
 	@import 'components/items';
 	@import 'components/index';
 
-// Layout.
 
 	@import 'layout/wrapper';
