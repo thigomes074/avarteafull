@@ -1,10 +1,4 @@
-///
-/// Story by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
 
-/* Spotlight (transitions) */
 
 	.spotlight {
 
@@ -22,7 +16,7 @@
 					$y: _duration(on-scroll);
 				}
 
-				// Content.
+			
 					&.on#{$event}-content-fade-up {
 						.content {
 							@include vendor('transition', (
@@ -99,7 +93,7 @@
 						}
 					}
 
-				// Image.
+				
 					&.on#{$event}-image-fade-up {
 						.image {
 							@include vendor('transition', (
@@ -218,15 +212,15 @@
 
 			}
 
-		// On Load.
+		
 			@include transition-spotlight('load');
 
-		// On Scroll.
+	
 			@include transition-spotlight('scroll');
 
 	}
 
-/* Spotlight (style1) */
+
 
 	.spotlight.style1 {
 		@include vendor('align-items', 'stretch');
@@ -315,9 +309,7 @@
 			}
 		}
 
-		// Modifiers.
-
-			// Orientation.
+		
 				&.orient-left {
 					// ...
 				}
@@ -332,7 +324,7 @@
 					}
 				}
 
-			// Content Alignment.
+		
 				&.content-align-left {
 					// ...
 				}
@@ -345,7 +337,7 @@
 					text-align: right;
 				}
 
-			// Image Position.
+			
 				&.image-position-left {
 					.image {
 						img {
@@ -368,7 +360,7 @@
 
 	}
 
-/* Spotlight (style2) */
+
 
 	.spotlight.style2 {
 		$image-size: 21rem;
@@ -449,9 +441,7 @@
 			}
 		}
 
-		// Modifiers.
-
-			// Orientation.
+	
 				&.orient-left {
 					@include vendor('flex-direction', 'row');
 
@@ -478,7 +468,7 @@
 					// ...
 				}
 
-			// Content Alignment.
+			
 				&.content-align-left {
 					// ...
 				}
@@ -491,7 +481,7 @@
 					text-align: right;
 				}
 
-			// Image Position.
+			
 				&.image-position-left {
 					.image {
 						img {
@@ -514,7 +504,6 @@
 
 	}
 
-/* Spotlight (style3) */
 
 	.spotlight.style3 {
 		$image-width: 13rem;
@@ -580,9 +569,7 @@
 			}
 		}
 
-		// Modifiers.
-
-			// Variant.
+	
 				&.iphone {
 					// ...
 				}
@@ -591,7 +578,7 @@
 					// ...
 				}
 
-			// Orientation.
+		
 				&.orient-left {
 					@include vendor('flex-direction', 'row');
 
@@ -614,7 +601,7 @@
 					// ...
 				}
 
-			// Content Alignment.
+			
 				&.content-align-left {
 					// ...
 				}
@@ -627,7 +614,7 @@
 					text-align: right;
 				}
 
-			// Image Position.
+			
 				&.image-position-left {
 					.image {
 						img {
@@ -650,7 +637,7 @@
 
 	}
 
-/* Spotlight (style4) */
+
 
 	.spotlight.style4 {
 		@include padding(_size(padding, default), _size(padding, default) * 0.75);
@@ -734,9 +721,7 @@
 			}
 		}
 
-		// Modifiers.
 
-			// Size.
 				&.fullscreen {
 					min-height: 100vh;
 				}
@@ -745,7 +730,6 @@
 					min-height: 50vh;
 				}
 
-			// Orientation.
 				&.orient-left {
 					@include vendor('justify-content', 'flex-start');
 					padding-left: 0;
@@ -770,7 +754,7 @@
 					}
 				}
 
-			// Content Alignment.
+
 				&.content-align-left {
 					text-align: left;
 				}
@@ -783,7 +767,7 @@
 					text-align: right;
 				}
 
-			// Image Position.
+			
 				&.image-position-left {
 					.image {
 						img {
@@ -806,7 +790,7 @@
 
 	}
 
-/* Spotlight (style5) */
+
 
 	.spotlight.style5 {
 		@include padding(_size(padding, default), _size(padding, default) * 0.75);
@@ -890,9 +874,6 @@
 			}
 		}
 
-		// Modifiers.
-
-			// Size.
 				&.fullscreen {
 					min-height: 100vh;
 				}
@@ -914,7 +895,7 @@
 					@include vendor('justify-content', 'flex-end');
 				}
 
-			// Content Alignment.
+			
 				&.content-align-left {
 					text-align: left;
 				}
@@ -927,7 +908,7 @@
 					text-align: right;
 				}
 
-			// Image Position.
+		
 				&.image-position-left {
 					.image {
 						img {
@@ -950,7 +931,7 @@
 
 	}
 
-// Mixin
+
 
 	@mixin color-spotlight($p: null) {
 		.spotlight {
@@ -972,7 +953,7 @@
 				@include color-phone($p);
 			}
 
-			// Variant.
+			
 				&.iphone {
 					.image {
 						@include color-phone-variant('iphone', $p);
@@ -991,7 +972,7 @@
 						@include color-phone(invert);
 					}
 
-					// Variant.
+					
 						&.iphone {
 							.image {
 								@include color-phone-variant('iphone', invert);
