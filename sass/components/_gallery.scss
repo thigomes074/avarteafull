@@ -1,14 +1,7 @@
-///
-/// Story by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
 
-/* Gallery (transitions) */
 
 	.gallery {
 
-		// Mixin.
 			@mixin transition-gallery($event) {
 				$x: null;
 				$y: null;
@@ -62,7 +55,7 @@
 
 	}
 
-/* Gallery (style1) */
+
 
 	.gallery.style1 {
 		@include color-typography(invert);
@@ -178,9 +171,7 @@
 			}
 		}
 
-		// Modifiers.
 
-			// size
 				&.small {
 					article {
 						width: 20%;
@@ -267,7 +258,7 @@
 
 	}
 
-/* Gallery (style2) */
+
 
 	.gallery.style2 {
 		@include color-typography(invert);
@@ -415,9 +406,7 @@
 			}
 		}
 
-		// Modifiers.
 
-			// size
 				&.small {
 					article {
 						width: 17.5rem;
@@ -476,7 +465,7 @@
 
 	}
 
-/* Gallery (lightbox) */
+
 
 	@include keyframes('gallery-modal-spinner') {
 		0% {
@@ -601,7 +590,6 @@
 		}
 	}
 
-// Mixin
 
 	@mixin color-gallery($p: null) {
 		.gallery {
