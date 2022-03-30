@@ -5,17 +5,11 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 
-/*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
-/* Banner (transitions) */
 
 	.banner {
 
-		// Mixin.
+		
 			@mixin transition-banner($event) {
 				$x: null;
 				$y: null;
@@ -29,7 +23,6 @@
 					$y: _duration(on-scroll);
 				}
 
-				// Content.
 					&.on#{$event}-content-fade-up {
 						.content {
 							@include vendor('transition', 'none');
@@ -95,7 +88,7 @@
 						}
 					}
 
-				// Image.
+			
 					&.on#{$event}-image-fade-up {
 						.image {
 							@include vendor('transition', 'none');
@@ -198,10 +191,10 @@
 
 			}
 
-		// On Load.
+		
 			@include transition-banner('load');
 
-		// On Scroll.
+		
 			@include transition-banner('scroll');
 
 	}
