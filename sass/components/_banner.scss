@@ -1,14 +1,8 @@
-///
-/// Story by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
 
-/* Banner (transitions) */
 
 	.banner {
 
-		// Mixin.
+		
 			@mixin transition-banner($event) {
 				$x: null;
 				$y: null;
@@ -22,7 +16,7 @@
 					$y: _duration(on-scroll);
 				}
 
-				// Content.
+				
 					&.on#{$event}-content-fade-up {
 						.content {
 							@include vendor('transition', (
@@ -99,7 +93,7 @@
 						}
 					}
 
-				// Image.
+				
 					&.on#{$event}-image-fade-up {
 						.image {
 							@include vendor('transition', (
@@ -218,15 +212,15 @@
 
 			}
 
-		// On Load.
+		
 			@include transition-banner('load');
 
-		// On Scroll.
+		
 			@include transition-banner('scroll');
 
 	}
 
-/* Banner (style1) */
+
 
 	.banner.style1 {
 		@include vendor('align-items', 'stretch');
@@ -309,9 +303,7 @@
 			}
 		}
 
-		// Modifiers.
 
-			// Size.
 				&.fullscreen {
 					min-height: 100vh;
 
@@ -326,7 +318,6 @@
 					}
 				}
 
-			// Orientation.
 				&.orient-left {
 					// ...
 				}
@@ -339,7 +330,7 @@
 					}
 				}
 
-			// Content Alignment.
+			
 				&.content-align-left {
 					// ...
 				}
@@ -356,7 +347,7 @@
 					}
 				}
 
-			// Image Position.
+			
 				&.image-position-left {
 					.image {
 						img {
@@ -368,7 +359,7 @@
 				&.image-position-center {
 					.image {
 						img {
-							// ...
+							
 						}
 					}
 				}
@@ -383,7 +374,7 @@
 
 	}
 
-/* Banner (style2) */
+
 
 	.banner.style2 {
 		@include padding(_size(padding, default) * 0.75, _size(padding, default) * 0.75);
@@ -461,14 +452,12 @@
 			}
 		}
 
-		// Modifiers.
 
-			// Size.
 				&.fullscreen {
 					min-height: 100vh;
 				}
 
-			// Orientation.
+		
 				&.orient-left {
 					@include vendor('justify-content', 'flex-start');
 					padding-left: 0;
@@ -493,7 +482,7 @@
 					}
 				}
 
-			// Content Alignment.
+		
 				&.content-align-left {
 					text-align: left;
 				}
@@ -506,7 +495,7 @@
 					text-align: right;
 				}
 
-			// Image Position.
+			
 				&.image-position-left {
 					.image {
 						img {
@@ -533,7 +522,7 @@
 
 	}
 
-/* Banner (style3) */
+
 
 	.banner.style3 {
 		$image-size: 21rem;
@@ -614,14 +603,12 @@
 			}
 		}
 
-		// Modifiers.
 
-			// Size.
 				&.fullscreen {
 					min-height: 100vh;
 				}
 
-			// Orientation.
+		
 				&.orient-left {
 					@include vendor('flex-direction', 'row');
 
@@ -648,7 +635,7 @@
 					// ...
 				}
 
-			// Content Alignment.
+
 				&.content-align-left {
 					// ...
 				}
@@ -661,7 +648,7 @@
 					text-align: right;
 				}
 
-			// Image Position.
+		
 				&.image-position-left {
 					.image {
 						img {
@@ -671,7 +658,7 @@
 				}
 
 				&.image-position-center {
-					// ...
+			
 				}
 
 				&.image-position-right {
@@ -684,7 +671,7 @@
 
 	}
 
-/* Banner (style4) */
+
 
 	.banner.style4 {
 		$image-width: 13rem;
@@ -750,23 +737,19 @@
 			}
 		}
 
-		// Modifiers.
-
-			// Size.
 				&.fullscreen {
 					min-height: 100vh;
 				}
 
-			// Variant.
 				&.iphone {
-					// ...
+				
 				}
 
 				&.android {
-					// ...
+				
 				}
 
-			// Orientation.
+		
 				&.orient-left {
 					@include vendor('flex-direction', 'row');
 
@@ -786,10 +769,10 @@
 				}
 
 				&.orient-right {
-					// ...
+				
 				}
 
-			// Content Alignment.
+			
 				&.content-align-left {
 					// ...
 				}
@@ -802,7 +785,6 @@
 					text-align: right;
 				}
 
-			// Image Position.
 				&.image-position-left {
 					.image {
 						img {
@@ -812,7 +794,7 @@
 				}
 
 				&.image-position-center {
-					// ...
+
 				}
 
 				&.image-position-right {
@@ -825,7 +807,7 @@
 
 	}
 
-/* Banner (style5) */
+
 
 	.banner.style5 {
 		@include padding(_size(padding, default), _size(padding, default));
@@ -885,27 +867,25 @@
 			@include padding(_size(padding, small) * 1.25, _size(padding, small));
 		}
 
-		// Modifiers.
 
-			// Size.
 				&.fullscreen {
 					min-height: 100vh;
 				}
 
-			// Content Alignment.
+		
 				&.content-align-left {
 					text-align: left;
 				}
 
 				&.content-align-center {
-					// ...
+					
 				}
 
 				&.content-align-right {
 					text-align: right;
 				}
 
-			// Image Position.
+		
 				&.image-position-left {
 					.image {
 						img {
@@ -915,7 +895,7 @@
 				}
 
 				&.image-position-center {
-					// ...
+					
 				}
 
 				&.image-position-right {
@@ -928,7 +908,7 @@
 
 	}
 
-// Mixin
+
 
 	@mixin color-banner($p: null) {
 		.banner {
@@ -950,7 +930,7 @@
 				@include color-phone($p);
 			}
 
-			// Variant.
+		
 				&.iphone {
 					.image {
 						@include color-phone-variant('iphone', $p);
@@ -969,7 +949,7 @@
 						@include color-phone(invert);
 					}
 
-					// Variant.
+					
 						&.iphone {
 							.image {
 								@include color-phone-variant('iphone', invert);
